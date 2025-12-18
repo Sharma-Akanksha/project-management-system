@@ -1,4 +1,5 @@
 Mini Project Management System
+
 A simplified multi-tenant project management system built as part of a software engineering screening task.
 The application demonstrates backend API design using Django + GraphQL and a frontend dashboard using React + TypeScript + Apollo Client.
 
