@@ -47,8 +47,11 @@ class TaskComment(models.Model):
     task = models.ForeignKey(
         Task,
         on_delete=models.CASCADE,
-        related_name='comments'
+        related_name="comments"
     )
     content = models.TextField()
     author_email = models.EmailField()
-    timestamp = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Comment by {self.author_email}"
